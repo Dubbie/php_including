@@ -1,0 +1,25 @@
+{
+    "sass.enabled": false,
+    "path": {
+        "scss/master.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "outputDir": "../css/",
+                "includePaths": [
+                    "scss/module/",
+                    "scss/layout/",
+                    "scss/base/",
+                    "scss/component/",
+                    "scss/state/"
+                ],
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "compressed"
+            },
+            "eqFTP.projectsPaths": [
+                "D:/development/www/SIFOKK/sifokk.hu",
+                "D:/development/www/SIFOKK/admin.sifokk.hu"
+            ]
+        }
+    }
+}
