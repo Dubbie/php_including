@@ -19,7 +19,8 @@
             "eqFTP.projectsPaths": [
                 "D:/development/www/SIFOKK/sifokk.hu",
                 "D:/development/www/SIFOKK/admin.sifokk.hu"
-            ]
+            ],
+            "brackets-git.gitPath": "git"
         }
     }
 }

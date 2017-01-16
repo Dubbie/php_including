@@ -1,3 +1,12 @@
 @import "module/all";
+
 @import "base/elements";
-@import "component/all";
+
+@import "component/button";
+@import "component/nav";
+@import "component/thumbnail";
+
+@import "layout/section";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";

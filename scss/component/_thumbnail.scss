@@ -1,0 +1,12 @@
+#pictures-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.thumbnail {
+  display: block;
+  max-width: 25%;
+  padding: 10px;
+}

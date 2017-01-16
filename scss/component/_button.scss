@@ -1,0 +1,31 @@
+.button {
+  display: inline-flex;
+  align-content: center;
+  justify-content: center;
+  height: 2.285rem;
+  border: 1px solid darken($fg, 15%);
+  border-radius: 3px;
+  background-color: $fg;
+  color: $bg;
+  padding: 0 0.75rem;
+  font-weight: 700;
+  
+  &:hover {
+    border-color: darken($fg, 25%);
+  }
+  
+  &:focus, &:active, &.is-active {
+    border-color: darken($fg, 50%);
+  }
+  
+  // COLORS
+  &.is-success {
+    background: $green;
+    color: $fg;
+  }
+  
+  &.is-danger {
+    background: $red;
+    color: $fg;
+  }
+}
