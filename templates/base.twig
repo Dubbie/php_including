@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+      <title>{% block title %}{% endblock %} | Proska Levente</title>
+      <link rel="stylesheet" href="./css/master.css" />
+    {% endblock %}
+  </head>
+  <body>
+    {% set active = active | default('index') %}
+    <header id="header">
+      <nav class="nav">
+        <img src="" alt="">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="./index.php" class="{% if active == 'index' %}is-active{% endif %}">Home</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="./gallery.php" class="{% if active == 'gallery' %}is-active{% endif %}">Gallery</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="./contact.php" class="{% if active == 'contact' %}is-active{% endif %}">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      {% block content %}{% endblock %}
+    </main>
+    <footer id="footer">
+      2017 - Mihó Dániel
+    </footer>
+  </body>
+</html>

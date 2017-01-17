@@ -1,9 +1,9 @@
 <?php
-  $active = 'contact';
-  include './inc/header.php'; 
+  require_once './vendor/autoload.php';
+
+  $loader = new Twig_Loader_Filesystem('./templates');
+  $twig   = new Twig_Environment($loader);
+
+  $template = $twig->load('contact.twig');
+  echo $template->render();
 ?>
-
-  <h1>Contact</h1>
-  <p>Ez itt NEM az index, hanem a contact.</p>
-
-<?php include './inc/footer.php'; ?>
